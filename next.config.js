@@ -17,7 +17,8 @@ module.exports = {
   basePath: basePath,
   output: 'export',
   images: {
-    loader: 'imgix',
-    path: 'blue-archive.imgix.net',
+    loader: 'custom',
+    loaderFile: './loader/imgixLoader.js',
+    domains: ['blue-archive.imgix.net/'],
   },
 }
